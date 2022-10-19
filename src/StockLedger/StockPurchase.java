@@ -1,2 +1,4 @@
-package StockLedger;public class StockPurchase {
+package StockLedger;
+
+public class StockPurchase {
 }
