@@ -135,12 +135,12 @@ public class LinkedDeque<T> implements DequeInterface<T>{
 
 
     public Iterator<T> iterator() {
-
+        return getIterator();
     }
 
 
     public Iterator<T> getIterator() {
-        return null;
+
     }
 
 
