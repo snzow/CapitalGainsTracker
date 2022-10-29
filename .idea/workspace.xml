@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="676292d1-1e41-4b70-851a-574cf471df2a" name="Changes" comment="first update, deque should be working with the exception of the iterator.">
+    <list default="true" id="676292d1-1e41-4b70-851a-574cf471df2a" name="Changes" comment="second update. not much more but a little">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Deque/LinkedDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deque/LinkedDeque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StockLedger/LedgerEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/LedgerEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StockLedger/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StockLedger/StockLedger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/StockLedger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StockLedger/StockLedgerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/StockLedgerInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StockLedger/StockPurchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/StockPurchase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +58,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666164798934</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="second update. not much more but a little">
+      <created>1666480455843</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666480455843</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -72,6 +81,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first update, deque should be working with the exception of the iterator." />
-    <option name="LAST_COMMIT_MESSAGE" value="first update, deque should be working with the exception of the iterator." />
+    <MESSAGE value="second update. not much more but a little" />
+    <option name="LAST_COMMIT_MESSAGE" value="second update. not much more but a little" />
   </component>
 </project>

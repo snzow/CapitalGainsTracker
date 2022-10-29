@@ -1,6 +1,8 @@
 package Deque;
 
+import java.util.Deque;
 import java.util.Iterator;
+import java.util.function.Consumer;
 
 public class LinkedDeque<T> implements DequeInterface<T>{
 
@@ -133,15 +135,61 @@ public class LinkedDeque<T> implements DequeInterface<T>{
         back = null;
     }
 
-
-    public Iterator<T> iterator() {
+    public DequeIterator<T> iterator() {
         return getIterator();
     }
 
 
-    public Iterator<T> getIterator() {
-
+    public DequeIterator<T> getIterator() {
+        return new DequeIterator<T>();
     }
 
+    private class DequeIterator<T> implements Iterator<T> {
 
+        DLNode front;
+        DLNode back;
+        DLNode current;
+
+        private DequeIterator(){
+            front = LinkedDeque.this.front;
+            back = LinkedDeque.this.back;
+            current = front;
+
+        }
+
+        @Override
+        public boolean hasNext() {
+            if (current.getNextNode() != null){
+                return true;
+            }
+            return false;
+        }
+
+        public boolean hasPrev() {
+            if (current.getPreviousNode() != null){
+                return true;
+            }
+            return false;
+        }
+
+        public void resetToBack(){
+            current = back;
+        }
+
+        public void resetToFront(){
+            current = front;
+        }
+
+        @Override
+        public T next() {
+            current = current.getNextNode();
+            return (T) current.getData();
+        }
+
+        public T prev() {
+            current = current.getPreviousNode();
+            return (T) current.getData();
+        }
+
+    }
 }
