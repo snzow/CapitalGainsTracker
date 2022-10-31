@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/src/StockLedger/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StockLedger/StockLedger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/StockLedger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StockLedger/StockLedgerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/StockLedgerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StockLedger/StockPurchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/StockPurchase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,5 +82,15 @@
     <MESSAGE value="first update, deque should be working with the exception of the iterator." />
     <MESSAGE value="second update. not much more but a little" />
     <option name="LAST_COMMIT_MESSAGE" value="second update. not much more but a little" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

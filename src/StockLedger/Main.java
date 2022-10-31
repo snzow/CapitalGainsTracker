@@ -12,13 +12,7 @@ public class Main {
         System.out.println("Welcome to Aodhan's Stock Ledger");
         Scanner kb = new Scanner(System.in);
         while(true){
-            System.out.println("------------------------");
-            System.out.println("Menu:");
-            System.out.println("1. Buy Shares");
-            System.out.println("2. Sell Shares");
-            System.out.println("3. View Ledger");
-            System.out.println("4. Quit");
-            System.out.println("------------------------");
+            printMenu();
             int input = kb.nextInt();
             if (input == 1){
                 System.out.println("Enter Stock Symbol: ");
@@ -45,6 +39,21 @@ public class Main {
                 break;
             }
         }
+
+
+    }
+
+    /**
+     * Prints a menu of options a user can select from
+     */
+    public static void printMenu(){
+        System.out.println("------------------------");
+        System.out.println("Menu:");
+        System.out.println("1. Buy Shares");
+        System.out.println("2. Sell Shares");
+        System.out.println("3. View Ledger");
+        System.out.println("4. Quit");
+        System.out.println("------------------------");
     }
 
 

@@ -23,6 +23,11 @@ public interface StockLedgerInterface {
      @return  Boolean of if the stock exists in the ledger. */
     public boolean contains(String stockSymbol);
 
+    /**
+     * Prints a formatted list of ledger entries, as well as the net profit from selling stocks
+     */
+    public void displayLedger();
+
     /** Returns a LedgerEntry object based on stock symbol.
      @param stockSymbol    The stock's symbol.
      @return  LedgerEntry object of stock symbol. */

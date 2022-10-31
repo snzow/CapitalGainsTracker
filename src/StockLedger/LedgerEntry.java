@@ -3,12 +3,11 @@ package StockLedger;
 import Deque.EmptyQueueException;
 import Deque.LinkedDeque;
 
-import java.sql.Array;
-import java.sql.SQLOutput;
-import java.util.ArrayList;
+import java.util.Iterator;
 
 public class LedgerEntry {
     String symbol;
+
     LinkedDeque<StockPurchase> purchases;
 
     public LedgerEntry(String s, int numBought,double price){
@@ -20,6 +19,11 @@ public class LedgerEntry {
         }
     }
 
+    /**
+     * Tallies and displays how many shares of the specified stock you own, and at what price they were purchased
+     * Runs in O(N) time
+     * @param StockSymbol the stock to display
+     */
     public void displayEntry(String StockSymbol){
 
         double currPrice = 0;
@@ -29,8 +33,11 @@ public class LedgerEntry {
             return;
         }
         System.out.print(purchases.getFront().getSymbol() + ": ");
-        for(StockPurchase i : purchases){
-             if (i.getCost() != currPrice){
+
+        Iterator<StockPurchase> dequeIterator = purchases.getIterator();
+        while (dequeIterator.hasNext()){
+            double cost = dequeIterator.next().getCost();
+            if (cost != currPrice){
                  if(currPrice != 0){
                      System.out.print(numShares + " shares), ");
                      reset = true;
@@ -40,8 +47,8 @@ public class LedgerEntry {
                      numShares = -1;
                      reset = false;
                  }
-                 currPrice = i.getCost();
-                 System.out.print(i.getCost() + " (");
+                 currPrice = cost;
+                 System.out.print(cost + " (");
 
 
              }
@@ -51,6 +58,12 @@ public class LedgerEntry {
         System.out.println(numShares + " shares)");
     }
 
+    /**
+     * Takes the shares that have been purchased and adds them to LinkedDeque associated with that stock
+     * @param s the symbol of the stock that was purchased
+     * @param numBought the number of shares that was purchased
+     * @param price the price at which the shares were purchased
+     */
     public void addShares(String s, int numBought, double price){
         for (int i = 0; i <= numBought; i++){
             StockPurchase temp = new StockPurchase(s,price);
@@ -58,6 +71,14 @@ public class LedgerEntry {
         }
     }
 
+    /**
+     * Sells the specified number of shares of symbol s at the specified price
+     * @param s the specified number of shares
+     * @param numSold the number of shares sold
+     * @param price the price at which they were sold
+     * @return the net profit of the sale
+     * @throws EmptyQueueException can throw an empty queue exception if the deque is empty
+     */
     public double sellShares(String s, int numSold, double price) throws EmptyQueueException {
         double profit = 0;
         for (int i = 0; i <= numSold; i++) {
@@ -67,7 +88,13 @@ public class LedgerEntry {
         return profit;
     }
 
-
+    /**
+     * returns the symbol of the LedgerEntry
+     * @return the stock symbol of the ledger entry
+     */
+    public String getSymbol(){
+        return symbol;
+    }
 
 
 }

@@ -6,6 +6,9 @@ import java.util.function.Consumer;
 
 public class LinkedDeque<T> implements DequeInterface<T>{
 
+    /**
+     * {@inheritDoc}
+     */
     DLNode front;
     DLNode back;
 
@@ -135,22 +138,22 @@ public class LinkedDeque<T> implements DequeInterface<T>{
         back = null;
     }
 
-    public DequeIterator<T> iterator() {
+    public IteratorForLinkedList<T> iterator() {
         return getIterator();
     }
 
 
-    public DequeIterator<T> getIterator() {
-        return new DequeIterator<T>();
+    public IteratorForLinkedList<T> getIterator() {
+        return new IteratorForLinkedList<T>();
     }
 
-    private class DequeIterator<T> implements Iterator<T> {
+    private class IteratorForLinkedList<T> implements Iterator<T> {
 
         DLNode front;
         DLNode back;
         DLNode current;
 
-        private DequeIterator(){
+        public IteratorForLinkedList(){
             front = LinkedDeque.this.front;
             back = LinkedDeque.this.back;
             current = front;
