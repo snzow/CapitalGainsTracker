@@ -15,7 +15,7 @@ public class StockLedger implements StockLedgerInterface{
      * {@inheritDoc}
      */
     public StockLedger(){
-        entries = new ArrayList<LedgerEntry>();
+        entries = new ArrayList<>();
     }
 
     public void displayLedger(){
@@ -29,7 +29,6 @@ public class StockLedger implements StockLedgerInterface{
         System.out.println(formatted.format(totalProfit));
     }
     public void buy(String stockSymbol, int sharesBought, double pricePerShare){
-        double cost = sharesBought * pricePerShare;
         if (contains(stockSymbol)){
             getEntry(stockSymbol).addShares(stockSymbol,sharesBought,pricePerShare);
         }

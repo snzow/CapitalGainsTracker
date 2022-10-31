@@ -92,10 +92,13 @@ public class LinkedDeque<T> implements DequeInterface<T>{
 
 
     public T removeBack() throws EmptyQueueException {
+
         if( isEmpty()){
             throw new EmptyQueueException();
         }
+
         T dataToReturn = back.getData();
+
         if (back.getPreviousNode() == null){
             front = null;
             back = null;

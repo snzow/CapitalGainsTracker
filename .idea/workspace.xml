@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="676292d1-1e41-4b70-851a-574cf471df2a" name="Changes" comment="second update. not much more but a little">
+    <list default="true" id="676292d1-1e41-4b70-851a-574cf471df2a" name="Changes" comment="COMPLETE!! + cleaned up a bit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Deque/LinkedDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deque/LinkedDeque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StockLedger/LedgerEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/LedgerEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StockLedger/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StockLedger/StockLedger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/StockLedger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StockLedger/StockLedgerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/StockLedgerInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666480455843</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="COMPLETE!!">
+      <created>1667189475462</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667189475462</updated>
+    </task>
+    <task id="LOCAL-00004" summary="COMPLETE!! + cleaned up a bit">
+      <created>1667189605563</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667189605563</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,7 +92,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first update, deque should be working with the exception of the iterator." />
     <MESSAGE value="second update. not much more but a little" />
-    <option name="LAST_COMMIT_MESSAGE" value="second update. not much more but a little" />
+    <MESSAGE value="COMPLETE!!" />
+    <MESSAGE value="COMPLETE!! + cleaned up a bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="COMPLETE!! + cleaned up a bit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
