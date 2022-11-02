@@ -44,7 +44,7 @@ public class LedgerEntry {
                  }
                  numShares = 0;
                  if (reset){
-                     numShares = -1;
+                     numShares = 0;
                      reset = false;
                  }
                  currPrice = cost;
@@ -65,9 +65,9 @@ public class LedgerEntry {
      * @param price the price at which the shares were purchased
      */
     public void addShares(String s, int numBought, double price){
-        for (int i = 0; i <= numBought; i++){
+        for (int i = 0; i < numBought; i++){
             StockPurchase temp = new StockPurchase(s,price);
-            purchases.addToFront(temp);
+            purchases.addToBack(temp);
         }
     }
 
@@ -81,8 +81,11 @@ public class LedgerEntry {
      */
     public double sellShares(String s, int numSold, double price) throws EmptyQueueException {
         double profit = 0;
-        for (int i = 0; i <= numSold; i++) {
-            StockPurchase temp = purchases.removeBack();
+        System.out.println("transaction");
+        for (int i = 0; i < numSold; i++) {
+            StockPurchase temp = purchases.removeFront();
+            int j = i +1;
+            System.out.println("Sold a share of " + s + " for " + price + " " + j);
             profit += price - temp.getCost();
         }
         return profit;

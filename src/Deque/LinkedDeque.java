@@ -85,6 +85,7 @@ public class LinkedDeque<T> implements DequeInterface<T>{
             back = null;
         }
         else{
+            front.getNextNode().setPreviousNode(null);
             front = front.getNextNode();
         }
         return dataToReturn;
@@ -104,7 +105,9 @@ public class LinkedDeque<T> implements DequeInterface<T>{
             back = null;
         }
         else{
+            back.getPreviousNode().setNextNode(null);
             back = back.getPreviousNode();
+
         }
         return dataToReturn;
     }

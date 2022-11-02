@@ -4,7 +4,8 @@
     <list default="true" id="676292d1-1e41-4b70-851a-574cf471df2a" name="Changes" comment="COMPLETE!! + cleaned up a bit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Deque/LinkedDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deque/LinkedDeque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StockLedger/StockLedger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/StockLedger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StockLedger/LedgerEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/LedgerEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StockLedger/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StockLedger/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +36,9 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -46,6 +49,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664745465389</updated>
+      <workItem from="1667190702231" duration="176000" />
+      <workItem from="1667361622683" duration="2849000" />
+      <workItem from="1667413720176" duration="1291000" />
     </task>
     <task id="LOCAL-00001" summary="first update, deque should be working with the exception of the iterator.">
       <created>1666164798934</created>
@@ -75,8 +81,18 @@
       <option name="project" value="LOCAL" />
       <updated>1667189605563</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="COMPLETE!! + cleaned up a bit">
+      <created>1667189697688</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667189697688</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
